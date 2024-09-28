@@ -1,0 +1,23 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#first {
+    color: blue;
+}
+
+.second{
+    color: green;
+}
+
+.bigger {
+    font-size:24pt;
+}
+
+main .bigger {
+    font-family: Jokerman;
+}
+
+.indent {
+    padding-left: 2em;
+}
