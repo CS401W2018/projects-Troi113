@@ -1,0 +1,25 @@
+body {
+    background-image: url(circles.jpg);
+    background-color:aquamarine;
+}
+
+.indent {
+    padding-left: 2em;
+}
+
+.titles {
+    color:#66140b;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 100px;
+    font-weight:bolder;
+}
+
+
+
+nav a {
+    color: green;
+}
+
+.current {
+    color: gray;
+}
