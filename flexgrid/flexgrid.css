@@ -25,8 +25,7 @@ nav a:hover{
 .container{
     display:grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-areas: 
-        "aside main";
+    
     background-color:darkolivegreen;
     
     
