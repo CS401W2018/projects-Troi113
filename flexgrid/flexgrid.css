@@ -25,7 +25,6 @@ nav a:hover{
 .container{
     display:grid;
     grid-template-columns: 1fr 4fr;
-    
     background-color:darkolivegreen;
     
     
@@ -46,8 +45,62 @@ aside{
 }
 
 .cardA{
-
+    width:200px;
+    height:200px;
+    background-image:url('birkz.jpg');
+    margin:0;
+    padding:0;
 }
+.cardB{
+    width:200px;
+    height:200px;
+    background-image:url('birkz.jpg');
+    margin:0;
+    padding:0;
+}
+.cardC{
+    width:200px;
+    height:200px;
+    background-image:url('birkz.jpg');
+    margin:0;
+    padding:0;
+}
+.cardD{
+    width:200px;
+    height:200px;
+    background-image:url('birkz.jpg');
+    margin:0;
+    padding:0;
+}
+.cardE{
+    width:200px;
+    height:200px;
+    background-image:url('birkz.jpg');
+    margin:0;
+    padding:0;
+}
+.cardF{
+    width:200px;
+    height:200px;
+    background-image:url('birkz.jpg');
+    margin:0;
+    padding:0;
+}
+.cardG{
+    width:200px;
+    height:200px;
+    background-image:url('birkz.jpg');
+    margin:0;
+    padding:0;
+}
+.cardH{
+    width:200px;
+    height:200px;
+    background-image:url('birkz.jpg');
+    margin:0;
+    padding:0;
+}
+
 
 .card{
     background-color: darkolivegreen;
