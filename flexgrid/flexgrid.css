@@ -1,0 +1,60 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: blanchedalmond;
+}
+
+nav{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+
+nav a{
+    background-color:darkolivegreen;
+    padding: 5px 10px;
+    width:20%; 
+    border:thick solid whitesmoke
+}
+
+nav a:hover{
+    background-color: blanchedalmond;
+    color:black;
+}
+
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+        "aside main";
+    background-color:darkolivegreen;
+    
+    
+}
+
+aside{
+    width:200px;
+    text-align: justify;
+    border: thick solid whitesmoke
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    
+    
+}
+
+.cardA{
+
+}
+
+.card{
+    background-color: darkolivegreen;
+    border: thick solid whitesmoke
+}
+
+.footer-link{
+    display:grid;
+}
