@@ -1,0 +1,6 @@
+.navcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    row-gap: 10px;
+
+}
