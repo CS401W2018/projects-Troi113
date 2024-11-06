@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Form Engagement</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+
+        <br>
+        <br>
+    </nav>
+
+    <main>
+        <form action="processing.html" method="post">
+            First Name: <input type="text" name="first"><br>
+            Last Name: <input type="text" name="last"><br>
+            Password: <input type="password" name="pass"><br>
+
+            <input type="checkbox" name="remember">Remember Me<br>
+            <input type="checkbox" name="remember" checked>Enrolled<br>
+
+            Grade:<br>
+            <input type="radio" name="grade" value="freshman"> Freshman<br>
+            <input type="radio" name="grade" value="sophomore"> Sophomore<br>
+            <input type="radio" name="grade" value="junior"> Junior<br>
+            <input type="radio" name="grade" value="senior"> Senior<br>
+            
+            <select name="state" id="state">
+                <option value="Hawaii">Hawaii</option>
+                <option value="Hawaii">California</option>
+                <option value="Hawaii">Utah</option>
+                <option value="Hawaii">Colorado</option>
+            </select><br>
+            <br>
+            <textarea name="comment" id=""></textarea><br>
+
+            <input type="submit">
+            
+        </form>
+
+        <p>
+            1. The form tag has an "action" attribute. What does it do?<br>
+            The action attribute defines the link where all of the form data is passed and submitted.<br>
+            <br>
+            2. The form tag has a "method" attribute. What does it do?<br>
+            The method tag determines the https method that the webpage will use to communicate data to the server. The most common ones are <b>get</b> and <b>post</b>.<br>
+            <br>
+            3. What is the difference between a "POST" and a "GET"?<br>
+            "GET" puts the input into the query string. Every data will be visible at the address bar. This makes it unsuitable for sensitive and private data.<br>
+            "POST" is a more secure choice. It only sends the data but hides it from the browser's address bar. It is more commonly used when dealing with registration, usernames, passwords, files,etc. <br>
+        </p>
+    </main>
+
+
+    <footer>
+        <p>&copy; Troy De la Cruz</p>
+    </footer>
+</body>
+</html>
