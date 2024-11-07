@@ -47,38 +47,40 @@ nav{
 .table1 td, .table1 th{
     border: thin solid black;
     padding: 5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 .table1 thead{
     background-color: blueviolet;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
 }
 
-.top {
+.first {
     background-color: pink;
-}
-
-.wrapper{
-    display:grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-areas: 
-        "header header"
-        "navigation navigation"
-        "sidebar main"
-        "footer footer"
-    ;
-}
-
-.sidebar{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header{grid-area:header;}
-nav{grid-area:navigation;}
-.sidebar {grid-area:sidebar}
-main {grid-area: main;}
-footer{grid-area:footer}
+.second{
+    background-color: ivory;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.wrapperflex {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:50px;
+}
+
+.item{
+    padding: 5px 10px;
+    width: 500px;
+}
+
+.sidebar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 footer{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
