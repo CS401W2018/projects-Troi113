@@ -1,0 +1,108 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+.navbar ul{
+    list-style-type: none;
+    background-color:rgb(79, 79, 79);
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    display:block;
+    text-align:center;
+    
+}
+
+.navbar a:hover{
+    background-color:hsl(0,0%,10%);
+
+}
+
+.navbar li{
+    float:left;
+}
+
+
+
+
+
+.form-row, .check-row{
+    display:flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+
+}
+
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+
+input:not([type='submit']),select,textarea{
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 3px;
+    background-color: #AAA;
+}
+
+input:not([type='submit']):focus,select:focus,textarea:focus{
+    background-color: white
+}
+
+input[type='submit']{
+    padding: 10px;
+    font-size: 1.5em;
+    border-radius: 3px;
+    background-color: #AAA;
+    box-shadow: 5px 5px 3px rgba(200,200,200,50%);
+
+}
+
+fieldset{
+    box-shadow: 5px 5px 3px rgba(200,200,200,50%);
+}
+
+
+
+legend{
+    padding: 10px;
+    background-color:blue;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    .form-row, .check-row{
+        flex-direction:column;
+    }
+
+    .form-row label{
+        text-align:left;
+    }
+    .spacer{
+        text-align:left;
+    }
+}

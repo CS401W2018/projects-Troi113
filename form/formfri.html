@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="formfri.css
+    ">
+</head>
+<body>
+
+    <header>
+        <h1>Form Friday</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+
+        <br>
+        <br>
+    </nav>
+
+    <main>
+        <fieldset>
+        <legend>Sign Up</legend>
+        <form action="processing.html" method="post">
+
+            <div class="form-row">
+                <label for="firstNameInput">First Name: </label>
+                <input type="text" name="firstName" id="firstNameInput" placeholder="First Name">
+            </div>
+
+            <div class="form-row">
+                <label for="lastNameInput">Last Name: </label>
+                <input type="text" name="last" id="lastNameInput" placeholder="Last Name"><br>
+            </div>
+
+            <div class="form-row">
+                <label for="emailInput">Email: </label>
+                <input type="email" name="email" id="emailInput"><br>
+            </div>
+
+            <div class="form-row">
+                <label for="dateInput">Birthdate:</label>
+                <input type="date" name="birthdate" id="dateInput">
+            </div>
+
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password"><br>
+            </div>
+
+            <div class="check-row">
+                <div class="spacer">Gender:</div>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label><input type="checkbox" name="agree" value="on" checked>I agree to the terms and conditions</label>
+            </div>
+
+            <div class="form-row">
+                <label for="state">State: </label>
+                <select name="state" id="password">
+
+                    <option value="ha">Hawaii</option>
+                    <option value="ca">California</option>
+                    <option value="ut">Utah</option>
+                    <option value="co">Colorado</option>
+            </select>
+            </div>
+            
+            <div class="form-row">
+                <label for="comment">Comment: </label>
+                <textarea name="comment" id="comment"></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="spacer"></div>
+                <input type="submit" value="Sign Up! C:">
+            </div>
+        </fieldset>
+        </form>
+
+        <p>
+            1.What are different ways to style your form?<br>
+            You could use css flex and grid.<br>
+            <br>
+            2. Why does the professor like to use flex?<br>
+            Because it is easier to make the page look good on mobile devices and desktop as well. It is also one directional, meaning that you only need to worry about one direction.
+            <br>
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; Troy De la Cruz</p>
+    </footer>
+
+</body>
+</html>
