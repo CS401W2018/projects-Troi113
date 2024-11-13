@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formjava.html">
+</head>
+<body>
+    <header>
+        <h1>Form Java</h1>
+    </header>
+
+    <nav>
+
+    </nav>
+
+    <main>
+        <form action="processing.html" method="post" id="myForm">
+            First Name: <input type="text" name="first" id="firstName"><br>
+            Last Name: <input type="text" name="last"><br>
+            Password: <input type="password" name="pass"><br>
+
+            <input type="checkbox" name="remember">Remember Me<br>
+            <input type="checkbox" name="remember" checked>Enrolled<br>
+
+            Grade:<br>
+            <input type="radio" name="grade" value="freshman"> Freshman<br>
+            <input type="radio" name="grade" value="sophomore"> Sophomore<br>
+            <input type="radio" name="grade" value="junior"> Junior<br>
+            <input type="radio" name="grade" value="senior"> Senior<br>
+            
+            <select name="state" id="state">
+                <option value="Hawaii">Hawaii</option>
+                <option value="Hawaii">California</option>
+                <option value="Hawaii">Utah</option>
+                <option value="Hawaii">Colorado</option>
+            </select><br>
+            <br>
+            <textarea name="comment" id=""></textarea><br>
+
+            <input type="submit">
+            
+        </form>
+
+        <p>
+            1. What is JavaScript? How did it get its name?<br>
+            Programming Language used
+            <br>
+            <br>
+
+            2. What are the two ways you can run JavaScript<br>
+            Using a script tag and using an external file
+            <br>
+            <br>
+            
+            3. What was the most popular front-end js library<br>
+            JQuery was the biggest front-end library before React.
+            <br>
+            4. What is the most popular front-end js library today?<br>
+            React is the most popular today.
+        </p>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script>
+        document.getElementByID('myForm').getEventListener('submit',function(event){
+            event.preventDefault();
+            const firstName=document.getElementById('firstName').value;
+            const formData={
+                firstName: firstName
+            }
+            if(!firstName||!lastname){
+                alert("First name required")
+            }
+
+        
+            console.log(formData);
+            alert("You submitted the form!")
+            })
+    </script>
+</body>
+</html>
