@@ -1,0 +1,60 @@
+nav a{
+    display:block;
+}
+
+h1,h2{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.navbar{
+    list-style-type: none;
+    background-color:hsl(0, 21%, 46%);
+    padding:0px;
+    margin:0px;
+    overflow:hidden;
+}
+
+.navbar a{
+    color:black;
+    text-decoration:none;
+    padding:15px;
+    display:block;
+    text-align:center;
+    
+}
+
+.navbar a:hover{
+    color: whitesmoke;
+    background-color:hsl(0, 60%, 30%);
+
+}
+
+.navbar li{
+    float:left;
+}
+
+
+
+
+.tablehome {
+    margin:5px auto;
+    border:thin solid black;
+    border-spacing:10px;
+    border-collapse:separate;
+    background-color:lightgrey;
+
+}
+
+.tablehome td, .table1 th{
+    border: thin solid black;
+    padding: 5px;
+    
+}
+
