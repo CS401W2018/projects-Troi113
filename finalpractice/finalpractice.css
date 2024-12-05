@@ -1,0 +1,25 @@
+nav {
+    display:flex;
+    justify-content: left;
+    align-items: center; 
+}
+
+nav a{
+    padding-right:10px;
+}
+
+main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.d{
+    border:solid thin black;
+    padding:10px
+}
+
+#d{
+    border:thin solid red;
+    padding:10px
+}
