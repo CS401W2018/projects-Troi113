@@ -1,19 +1,28 @@
-nav a{
-    display:block;
-}
 
-h1,h2{
+h1,h2,h3{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     font-size: 50px;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h3{
+    font-size: 30px;
 }
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+}
 
-.navbar{
+nav{
     list-style-type: none;
     background-color:hsl(0, 21%, 46%);
     padding:0px;
@@ -21,26 +30,19 @@ body{
     overflow:hidden;
 }
 
-.navbar a{
+nav a{
     color:black;
     text-decoration:none;
     padding:15px;
-    display:block;
     text-align:center;
     
 }
 
-.navbar a:hover{
+nav a:hover{
     color: whitesmoke;
     background-color:hsl(0, 60%, 30%);
 
 }
-
-.navbar li{
-    float:left;
-}
-
-
 
 
 .tablehome {
@@ -48,13 +50,105 @@ body{
     border:thin solid black;
     border-spacing:10px;
     border-collapse:separate;
-    background-color:lightgrey;
+    background-color: grey
 
 }
 
 .tablehome td, .table1 th{
     border: thin solid black;
     padding: 5px;
+    background-color: burlywood;
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card{
+    width:300px;
+    box-shadow: 5px 4px 3px;
+}
+
+.card figure{
+    margin:0;
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and(max-width:600px){
+    nav{
+        flex-direction: column;
+    }
+
+    .container{
+        flex-direction:column;
+    }
+}
