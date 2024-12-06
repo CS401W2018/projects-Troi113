@@ -1,7 +1,10 @@
-const clickableCards = document.querySelectorAll('.card');
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.card');
 
-clickableCards.forEach(card => {
+cards.forEach(card => {
   card.addEventListener('click', () => {
-    window.location.href = 'https://cs401w2018.github.io/projects-Troi113/final/onemillionroyal.html'; // Replace with your desired URL
+    const link = card.getAttribute('data-link');
+    window.location.href = link;
   });
+});
 });

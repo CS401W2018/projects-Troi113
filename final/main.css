@@ -5,23 +5,47 @@ body{
     background-image: url("images/bg.jpg");
     
     background-color: #443742;
+
+    display:flex;
+    flex-direction: column;
+
 }
+
+.textbox{
+    border: 2px solid #ccc; /* Adjust border width and color as needed */
+    padding: 20px;
+    margin: 20px 0;
+    background-color:#443742 ; /* Background color for the frame */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    color:#E4B7E5;
+}
+
+.centeralign{
+    display: grid;
+    place-items: center;
+    height: auto; /* Adjust the height as needed */
+  }
+
 
 header{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     font-size: 36px;
-    text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin: 20px 0;
-    color: #ffd9f9;
+    color:#E4B7E5;
+
+    
+
 }
 
 h2,h3{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     font-size: 50px;
-    color: #130f12;
+    
 }
 
 h2{
@@ -40,14 +64,21 @@ nav{
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    background-color:hsl(0, 21%, 46%);
     padding:0px;
     margin:0px;
     overflow:hidden;
+    width:600px;
+    border: 2px solid #ccc; /* Adjust border width and color as needed */
+    padding: 20px;
+    margin: 20px 0;
+    background-color:#443742 ; /* Background color for the frame */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 600px;
 }
 
 nav a{
-    color:black;
+    color:#E4B7E5;
     text-decoration:none;
     padding:15px;
     text-align:center;
@@ -55,28 +86,37 @@ nav a{
 }
 
 nav a:hover{
-    color: whitesmoke;
-    background-color:hsl(0, 60%, 30%);
+    color: #05668D;
+    background-color:#E4B7E5;
+    border-radius: 20px;
 
 }
 
 
-.tablehome {
+
+.table {
     margin:5px auto;
     border:thin solid black;
     border-spacing:10px;
     border-collapse:separate;
-    background-color: grey
+    background-color:#443742;
 
 }
 
-.tablehome td, .table1 th{
+.table td, .table1 th{
     border: thin solid black;
     padding: 5px;
-    background-color: burlywood;
+    background-color:#E4B7E5;
     
 }
 
+.table thead{
+    color:#E4B7E5;
+}
+
+.table tbody{
+    color:#743b05;
+}
 
 
 
@@ -125,7 +165,7 @@ nav a:hover{
     width:300px;
     box-shadow: 5px 4px 3px;
     cursor: pointer;
-
+    text-align: center;
 }
 
 .card:hover {
@@ -137,10 +177,6 @@ nav a:hover{
     opacity: 0.8;
 }
 
-.card h3, p{
-    text-align: center;
-
-}
 
 .card figure{
     margin:10px;
@@ -162,6 +198,60 @@ nav a:hover{
 
 
 
+.form-row, .check-row{
+    display:flex;
+    gap: 10px;
+    margin: 5px 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form-row label{
+    width: 150px;
+    text-align: right;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.spacer{
+    width: 150px;
+    text-align: right;
+}
+
+input:not([type='submit']),select,textarea{
+    padding: 1px;
+    font-size: 1em;
+    border-radius: 4px;
+    background-color:rgb(192, 168, 168);
+}
+
+input:not([type='submit']):focus,select:focus,textarea:focus{
+    background-color: white
+}
+
+input[type='submit']{
+    padding: 15px;
+    font-size: 1em;
+    border-radius: 4px;
+    background-color: rgb(192, 168, 168);
+    box-shadow: 5px 5px 3px rgba(137, 108, 108, 0.5);
+
+}
+
+legend{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 30px;
+    background-color:#E4B7E5;
+    color:#443742;
+    font-size: 1.5em;
+    font-weight:bolder;
+    
+}
+
+fieldset{
+    box-shadow: 5px 5px 3px ;
+    background-color:#743b05;
+}
+
 
 
 
@@ -182,6 +272,7 @@ nav a:hover{
     nav{
         display: flex;
         flex-direction: column;
+        width:100%;
     }
 
     .container{
