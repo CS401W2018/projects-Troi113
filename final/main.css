@@ -1,8 +1,27 @@
+body{
 
-h1,h2,h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    background-image: url("images/bg.jpg");
+    
+    background-color: #443742;
+}
+
+header{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 20px 0;
+    color: #ffd9f9;
+}
+
+h2,h3{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bolder;
     font-size: 50px;
+    color: #130f12;
 }
 
 h2{
@@ -13,16 +32,13 @@ h3{
     font-size: 30px;
 }
 
-body{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
+
+
+
 
 nav{
     display: flex;
     flex-direction: row;
-}
-
-nav{
     list-style-type: none;
     background-color:hsl(0, 21%, 46%);
     padding:0px;
@@ -98,17 +114,36 @@ nav a:hover{
 
 .container{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 10px;
 }
 
+
+
 .card{
     width:300px;
     box-shadow: 5px 4px 3px;
+    cursor: pointer;
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:active {
+    opacity: 0.8;
+}
+
+.card h3, p{
+    text-align: center;
+
 }
 
 .card figure{
-    margin:0;
+    margin:10px;
 }
 
 .card img{
@@ -143,12 +178,18 @@ nav a:hover{
 
 
 
-@media only screen and(max-width:600px){
+@media only screen and (max-width:600px){
     nav{
+        display: flex;
         flex-direction: column;
     }
 
     .container{
+        display: flex;
         flex-direction:column;
+    }
+
+    .card{
+        width:100%;
     }
 }
