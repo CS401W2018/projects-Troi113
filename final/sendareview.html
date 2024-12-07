@@ -23,15 +23,18 @@
     </nav>
 
     <main>
-        
         <div class="textbox">
-        <h2>Send a Review</h2>
+        <div id="message"></div> 
+
+        <div id="clear">
+        <h2 class=" centeralign">Send a Review</h2>
         
 
         <fieldset>
             <legend>Details</legend>
             
             <div class="container">
+            
             <form action="processing.html" method="post" id="myForm">
 
                 <div class="form-row">
@@ -61,7 +64,7 @@
 
                 <div class="form-row">
                     <label for="sillage">Sillage: </label>
-                    <select name="sillage" id="sillage">
+                    <select name="sillage" id="sillageInput">
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -92,7 +95,7 @@
 
                 <div class="check-row">
                     <div class="spacer"></div>
-                    <label><input type="checkbox" name="agree" value="on" checked>I give consent to publicize this information</label>
+                    <label><input type="checkbox" name="agree" value="on" id="agree" checked>I give consent to publicize this information</label>
                 </div>
 
                 <br>
@@ -105,6 +108,7 @@
             </form>
             </div>  
         </fieldset>
+        </div>
     </div>
 
     </main>
@@ -115,41 +119,6 @@
         &copy; Troy De la Cruz
     </footer>
 
-    <script>
-        document.getElementById("myForm").addEventListener("submit", function(event){
-            event.preventDefault();
-            const user=document.getElementById("userNameInput").value;
-            const frag=document.getElementById("fragranceInput").value;
-            const over=document.getElementById("overallInput").value;
-            const sill=document.getElementById("sillageInput").value;
-            const perf=document.getElementById("performanceInput").value;
-            const comm=document.getElementById("commentInput").value;
-
-            const data={
-                userName: user,
-                fragName: frag,
-                overAll: over,
-                sillage: sill,
-                performance: perf,
-                comment: comm
-
-            }
-
-            const xhr = new XMLHttpRequest();
-            xhr.open("POST", "submit.json", true);
-            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-            xhr.onreadystatechange = function (){
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    alert('Form submitted successfully.');
-                } else if(xhr.readystate = 4){
-                    alert( 'Error submitting form.');
-                }
-            };
-
-            alert("Your response has been recorded!");
-
-            console.log(data);
-        })
-    </script>
+    <script src="form.js"></script>
 </body>
 </html>
